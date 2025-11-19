@@ -4,9 +4,9 @@ Este proyecto es un portafolio web creado como parte de la asignatura de Tecnolo
 
 ## 📌 Descripción
 El sitio web contiene tres secciones:
-- **Inicio**: presentación, foto, redes sociales y datos personales.
-- **Sobre mí**: información personal y habilidades.
-- **Currículum**: formación académica, áreas de estudio y experiencia técnica.
+- **Inicio**: Presentación, foto, redes sociales y datos personales.
+- **Sobre mí**: Información personal y habilidades.
+- **Currículum**: Formación académica, áreas de estudio y experiencia técnica.
 
 Está desarrollado con:
 - HTML5
