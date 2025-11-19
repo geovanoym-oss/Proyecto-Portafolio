@@ -1,0 +1,215 @@
+/* ==========================
+   RESET
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+  width: 100%;
+  background: #111;
+  padding: 18px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border-bottom: 2px solid red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-superior a {
+  color: red;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-superior a:hover {
+  color: white;
+  text-shadow: 0 0 6px red;
+}
+
+/* ==========================
+   INICIO
+========================== */
+.inicio-contenedor {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: calc(100vh - 140px);
+  gap: 80px;
+}
+
+.texto-izq {
+  width: 45%;
+  max-width: 550px;
+  text-align: left;
+}
+
+.texto-izq h1 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.resaltado {
+  color: red;
+}
+
+.datos-personales {
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.nombre,
+.matricula {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.descripcion {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.lista-estudios {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.lista-estudios li {
+  font-size: 18px;
+  color: white;
+}
+
+/* Redes sociales */
+.titulo-redes {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+
+.redes-botones {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 12px;
+}
+
+.btn-red {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-red i {
+  font-size: 20px;
+  color: red;
+  transition: 0.3s;
+}
+
+.btn-red:hover {
+  background: red;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px red;
+}
+
+.btn-red:hover i {
+  color: black;
+}
+
+/* Foto derecha */
+.foto-der img {
+  width: 350px;
+  border-radius: 12px;
+  border: 3px solid red;
+  box-shadow: 0 0 15px red;
+}
+
+/* ==========================
+   PÁGINAS SECUNDARIAS
+========================== */
+.pagina {
+  padding: 160px 40px 60px;
+  min-height: 100vh;
+}
+
+.pagina h2 {
+  font-size: 32px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.subtitulo {
+  margin-top: 20px;
+  font-size: 22px;
+  color: red;
+}
+
+/* ==========================
+   CURRÍCULUM
+========================== */
+.curriculum-contenedor {
+  padding: 160px 40px 60px;
+  min-height: 100vh;
+  display: flex;
+  gap: 60px;
+}
+
+.curriculum-texto {
+  width: 60%;
+}
+
+.curriculum-foto img {
+  width: 350px;
+  border-radius: 12px;
+  border: 3px solid red;
+  box-shadow: 0 0 15px red;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  background: red;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
