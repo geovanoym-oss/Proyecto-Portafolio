@@ -7,10 +7,12 @@ El sitio web contiene tres secciones:
 - **Inicio**: Presentación, foto, redes sociales y datos personales.
 - **Sobre mí**: Información personal y habilidades.
 - **Currículum**: Formación académica, áreas de estudio y experiencia técnica.
+- **Proyectos**: Todos los proyectos realizados en la asignatura.
 
 Está desarrollado con:
 - HTML5
 - CSS3
+- JavaScript 
 - Estilo visual negro con detalles en rojo
 - Responsive para dispositivos móviles
 
@@ -19,5 +21,5 @@ Está desarrollado con:
 Matrícula: **24-EISN-2-037**
 
 ## 🌐 Enlaces
-- **Página web en Vercel: https://proyecto-portafolio-e5mn.vercel.app/
+- **Página web en Vercel: https://proyecto-portafolio-tgye-c1atp5sqc.vercel.app/
 - **Repositorio en GitHub: https://github.com/geovanoym-oss/Proyecto-Portafolio
