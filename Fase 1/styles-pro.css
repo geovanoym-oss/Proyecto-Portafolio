@@ -1,0 +1,495 @@
+/* ================================
+   RESET Y BASE
+================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Variables de Color */
+:root {
+  --color-bg: #0a0a0a;
+  --color-text-light: #f0f0f0;
+  --color-accent: #e50000;
+  --color-dark-gray: #1a1a1a;
+  --header-height: 70px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-light);
+  line-height: 1.6;
+
+  padding-top: var(--header-height);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+/* ================================
+   HEADER Y NAV
+================================*/
+.main-header {
+  background-color: var(--color-dark-gray);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  z-index: 1000;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+.menu-superior a {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  color: var(--color-accent);
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.menu-superior a:hover {
+  color: var(--color-text-light);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* ================================
+   1. SECCIÓN PRINCIPAL 
+================================*/
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height));
+  padding: 60px 5%;
+  gap: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.resaltado {
+  color: var(--color-accent);
+  text-shadow: 0 0 5px rgba(229, 0, 0, 0.5);
+}
+
+.descripcion-pro {
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+/* --- Botones principales --- */
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-text-light);
+  color: var(--color-accent);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* --- Social Links --- */
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: var(--color-text-light);
+  padding: 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+/* --- Imagen Hero --- */
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid var(--color-accent);
+  box-shadow: 0 0 30px rgba(229, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+/* ================================
+   2. SECCIÓN DE HABILIDADES
+================================*/
+.skills-section {
+  padding: 60px 5%;
+  text-align: center;
+  background-color: var(--color-dark-gray);
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: var(--color-accent);
+  margin-bottom: 3rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  background-color: var(--color-bg);
+  padding: 30px;
+  border-radius: 10px;
+  border-bottom: 3px solid var(--color-accent);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(229, 0, 0, 0.3);
+}
+
+.skill-card i {
+  color: var(--color-accent);
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: var(--color-text-light);
+}
+
+/* ================================
+   3. ESTILOS DE PÁGINAS INTERNAS 
+================================*/
+
+.pagina-contenido {
+  min-height: calc(100vh - var(--header-height) - 60px);
+  padding: 40px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pagina-contenido h2 {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 10px;
+}
+
+.pagina-contenido h3 {
+  font-size: 1.6rem;
+  color: var(--color-accent);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.pagina-contenido .descripcion {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lista-estudios li {
+  font-size: 1rem;
+  margin-left: 20px;
+  list-style: disc;
+}
+
+/* --- Curriculum Image --- */
+.curriculum-contenido {
+  display: flex;
+  gap: 3rem;
+}
+
+.cv-texto {
+  flex-grow: 1;
+}
+
+.cv-image-container {
+  flex-shrink: 0;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.cv-image-container img {
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+/* --- Proyectos --- */
+
+.proyecto-btn {
+  display: inline-block;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* ================================
+   4. JUEGO: NÚMERO SECRETO
+================================*/
+
+.juego-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height) - 60px);
+  padding: 40px 5%;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.interfaz-juego {
+  background: var(--color-dark-gray);
+  padding: 40px;
+  border-radius: 15px;
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 0 20px rgba(229, 0, 0, 0.5);
+  width: 50%;
+  max-width: 500px;
+}
+
+.interfaz-juego h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--color-text-light);
+}
+
+.instruccion {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.campo-numero {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border: 3px solid var(--color-accent);
+  border-radius: 10px;
+  background: var(--color-bg);
+  color: var(--color-text-light);
+  text-align: center;
+  outline: none;
+}
+
+.botones-juego {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-juego {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-grow: 1;
+}
+
+.btn-intentar {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.btn-nuevo {
+  background: transparent;
+  border: 2px solid var(--color-accent);
+  color: var(--color-text-light);
+}
+
+.mensaje-feedback {
+  min-height: 30px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-text-light);
+}
+
+.imagen-mago {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-proyecto {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ================================
+   5. FOOTER
+================================*/
+.main-footer {
+  background-color: var(--color-dark-gray);
+  color: var(--color-text-light);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-accent);
+}
+
+/* ================================
+   6. RESPONSIVE
+================================*/
+@media (max-width: 900px) {
+  /* Header */
+  .main-header {
+    padding: 0 5%;
+  }
+
+  /* Hero */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    gap: 2rem;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-image-container {
+    width: 70%;
+    max-width: 300px;
+    margin-top: 0;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CV / Sobre Mí */
+  .curriculum-contenido {
+    flex-direction: column;
+  }
+  .cv-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+  .cv-image-container img {
+    width: 50%;
+    max-width: 150px;
+  }
+
+  /* Proyectos - Botones */
+  .proyecto-btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Juego */
+  .juego-contenedor {
+    flex-direction: column;
+    padding: 100px 5% 40px;
+  }
+  .interfaz-juego {
+    width: 100%;
+    padding: 25px;
+  }
+  .imagen-mago {
+    width: 70%;
+    margin-top: 20px;
+  }
+  .botones-juego {
+    flex-direction: column;
+  }
+}
