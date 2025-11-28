@@ -5,7 +5,7 @@ let numeroSecreto = 0;
 let intentos = 0;
 const maxIntentos = 3; // Límite de intentos
 
-// Obtener referencias a los elementos del HTML
+
 const inputNumero = document.getElementById("numeroUsuario");
 const mensajeFeedback = document.getElementById("mensaje");
 const btnIntentar = document.getElementById("btnIntentar");
@@ -137,7 +137,7 @@ function terminarJuego(esVictoria) {
 }
 
 // ===============================================
-// Event Listeners (Conectar botones)
+//  (Conectar botones)
 // ===============================================
 
 // Evento para el botón "Intentar"
