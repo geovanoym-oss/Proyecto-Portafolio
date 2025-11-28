@@ -1,11 +1,8 @@
-// ===============================================
-// Variables globales y elementos del DOM
-// ===============================================
+
 let numeroSecreto = 0;
 let intentos = 0;
 const maxIntentos = 3;
 
-// Obtener referencias a los elementos del HTML
 const inputNumero = document.getElementById("numeroUsuario");
 const mensajeFeedback = document.getElementById("mensaje");
 const btnIntentar = document.getElementById("btnIntentar");
@@ -22,9 +19,7 @@ function generarNumeroSecreto(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/**
- * Asigna un mensaje en el elemento de feedback con un color específico.
- */
+
 function mostrarMensaje(texto, color) {
   mensajeFeedback.textContent = texto;
   mensajeFeedback.style.color = color;
@@ -61,7 +56,7 @@ function verificarIntento() {
 
   // Validar que sea un número válido entre 1 y 10
   if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 10) {
-    // En lugar de alert(), usamos un mensaje en la interfaz
+    // En lugar de alert(), mejor esto
     mostrarMensaje(
       "❌ Por favor, ingresa un número válido entre 1 y 10.",
       "yellow"
@@ -119,7 +114,6 @@ function terminarJuego(esVictoria) {
   btnIntentar.disabled = true;
   btnNuevoJuego.disabled = false;
 
-  // Opcional: Agregar clases para efectos visuales si se usan en CSS
   const interfaz = document.querySelector(".interfaz-juego");
   if (esVictoria) {
     interfaz.classList.add("juego-ganado");
@@ -128,9 +122,7 @@ function terminarJuego(esVictoria) {
   }
 }
 
-// ===============================================
-// Event Listeners (Conectar botones)
-// ===============================================
+
 
 btnIntentar.addEventListener("click", verificarIntento);
 btnNuevoJuego.addEventListener("click", iniciarJuego);
