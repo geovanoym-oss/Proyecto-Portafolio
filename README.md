@@ -21,5 +21,5 @@ Está desarrollado con:
 Matrícula: **24-EISN-2-037**
 
 ## 🌐 Enlaces
-- **Página web en Vercel: https://proyecto-portafolio-tgye-c1atp5sqc.vercel.app/
+- **Página web en Vercel: https://proyecto-portafolio-nxqh.vercel.app/
 - **Repositorio en GitHub: https://github.com/geovanoym-oss/Proyecto-Portafolio
