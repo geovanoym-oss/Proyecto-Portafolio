@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodeMasters - Inicio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand"><a href="index.html">CodeMasters</a></div>
+
+        <button id="menuToggle" class="menu-toggle">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="secciones.html">Secciones</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="carousel" id="carousel">
+        <div class="carousel-track">
+          <article class="slide active">
+            <img src="logo-grande.svg" />
+            <div class="slide-caption">
+              <h2>Bienvenido a CodeMasters</h2>
+              <p>Noticias, análisis y tecnología en un solo lugar.</p>
+            </div>
+          </article>
+
+          <article class="slide">
+            <img src="tutorial.png" />
+            <div class="slide-caption">
+              <h2>Guías y tutoriales</h2>
+              <p>Aprende lo que necesitas, de forma clara.</p>
+            </div>
+          </article>
+
+          <article class="slide">
+            <img src="analisis.png" />
+            <div class="slide-caption">
+              <h2>Análisis de videojuegos</h2>
+              <p>Reviews honestas y directas.</p>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-btn prev">◀</button>
+        <button class="carousel-btn next">▶</button>
+        <div id="indicators" class="carousel-indicators"></div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container main">
+      <h2>Últimas novedades</h2>
+
+      <section class="cards-grid">
+        <!-- GAMING -->
+        <article class="card">
+          <img src="3e87c16e-3a14-4796-aa95-46dc6c0c880a.jpg" />
+          <div class="card-body">
+            <span class="tag">Gaming</span>
+            <h3>Nuevo shooter rompe récords</h3>
+            <p>Experiencia inmersiva con jugabilidad pulida.</p>
+            <a href="gaming.html" class="read-more">Leer más</a>
+          </div>
+        </article>
+
+        <!-- TECNOLOGÍA -->
+        <article class="card">
+          <img src="descarga (2).jpeg" />
+          <div class="card-body">
+            <span class="tag">Tecnología</span>
+            <h3>¿Cómo mejorar tu PC?</h3>
+            <p>Métodos rápidos y sin gastar dinero.</p>
+            <a href="tecnologia.html" class="read-more">Leer más</a>
+          </div>
+        </article>
+
+        <!-- VIDEOJUEGOS (NUEVA) -->
+        <article class="card">
+          <img src="descarga (3).jpeg" />
+          <div class="card-body">
+            <span class="tag">Videojuegos</span>
+            <h3>Los juegos más jugados del momento</h3>
+            <p>Una lista actualizada con los más populares.</p>
+            <a href="videojuegos.html" class="read-more">Leer más</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h4>CodeMasters</h4>
+          <p>Proyecto Final — Etapa 3</p>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> CodeMasters</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
